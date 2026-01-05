@@ -69,6 +69,28 @@
         font-size: 1.9rem;
       }
     }
+  
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    }
   </style>
 </head>
 <body>
@@ -91,6 +113,12 @@
       Deseo que este nuevo año te traiga sonrisas, sueños cumplidos, paz y mucha felicidad. Y si alguna vez el mundo se pone pesado, recuerda que aquí estoy yo, para cuidarte, sostenerte la manito y caminar a tu lado.
     </p>
 
+        <div class="gallery">
+      <img src="fotos/foto1.jpg" alt="Porque tu" />
+      <img src="fotos/foto2.png" alt="eres lo mas bonito" />
+      <img src="fotos/foto3.jpg" alt="De mi vida, amor <3" />
+    </div>
+
     <p class="signature">
       Con todo mi amor 💖<br />
       — Tu persona que te ama mucho
@@ -98,5 +126,8 @@
 
     <div class="bee">🐝✨💛</div>
   </div>
+</body>
+</html>
+
 </body>
 </html>
